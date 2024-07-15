@@ -1,0 +1,37 @@
+header{
+  width: 100%;
+  padding: 30px;
+  border-bottom: 1px solid var(--outline-header-color);
+  box-shadow: 0px 0px 10px var(--outline-header-color);
+
+  .header-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .header-wrapper--btn-back{
+      button{
+        border: none;
+        background-color: transparent;
+
+        cursor: pointer;
+      }
+    }
+
+    .header-wrapper--desc{
+      h3{
+        font-weight: 700;
+        font-size: 17px;
+        color: var(--bg-secondary);
+      }
+
+      span{
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--online-color-text);
+      }
+    }
+
+  }
+
+}
