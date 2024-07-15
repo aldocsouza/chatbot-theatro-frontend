@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --bg-primary: #FFFFFF;
+  --bg-secondary: rgb(146, 47, 41);
+  --bg-tertiary: #F4F4F4;
+  --bg-ballon-response: #EEEEEE;
+  --color-text-primary: #757575;
+  --online-color-text: #3ABF38;
+  --outline-header-color: #ECECEC;
+  --color-text-icon--question: #3F3F3F;
+  --color-text-question: #3E3E3E;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+  font-weight: 500;
+}
+
+
+html{
+  height: 100vh;
+
+  body{
+    height: 100%;
+
+    app-root{
+      height: 100%;
+    }
+
+  }
+}
