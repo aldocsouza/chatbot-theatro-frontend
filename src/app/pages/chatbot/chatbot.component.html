@@ -1,0 +1,16 @@
+<header>
+  <header-component></header-component>
+</header>
+<main>
+  @if (messages.length < 1) {
+    <question-request (message)="requestMessage($event)" class="question-request"></question-request>
+  } @else {
+    <chat-dialog [message]="messages"  class="chat-dialog"></chat-dialog>
+  }
+  <form [formGroup]="formMessage">
+    <input type="text" formControlName="message" placeholder="Quando o museu foi criado?">
+    <button type="submit" (click)="sendNewMessage()">
+      <icon-send></icon-send>
+    </button>
+  </form>
+</main>
