@@ -1,0 +1,5 @@
+<div class="conversation-wrapper">
+  @for (message of message; track $index) {
+    <question-response [messages]="message"></question-response>
+  }
+</div>
