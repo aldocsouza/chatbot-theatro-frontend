@@ -1,0 +1,17 @@
+<section class="question-wrapper">
+  @for (suggestion of suggestions; track suggestion) {
+
+    <div class="suggestions-question">
+      <div class="question-title-wrapper">
+        @if( suggestion.icon === 'doubt' ){ <icon-doubts></icon-doubts> }
+        @else if( suggestion.icon === 'curiosity' ){ <icon-curiosities></icon-curiosities> }
+        @else if( suggestion.icon === 'history' ){ <icon-history></icon-history> }
+        <h4> {{ suggestion.title }} </h4>
+      </div>
+      <ul> @for(question of suggestion.questions; track question){
+        <li (click)="sendQuestion(question)"> {{ question }} </li>
+      }</ul>
+    </div>
+
+  }
+</section>
