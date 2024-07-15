@@ -1,0 +1,22 @@
+.baloon-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .baloon{
+    display: inline-block;
+    padding: 17px;
+    border-radius: 25px 0px 25px 25px;
+
+    &.request{
+      background-color: var(--bg-secondary);
+      color: var(--bg-primary);
+    }
+
+    &.response{
+      background-color: var(--bg-ballon-response);
+      color: #656565;
+    }
+
+  }
+}
