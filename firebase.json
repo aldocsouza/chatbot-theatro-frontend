@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/chat-theatro/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
