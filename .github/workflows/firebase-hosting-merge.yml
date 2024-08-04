@@ -12,8 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
-      - run: mv dist/chat-theatro/browser/index.csr.html dist/chat-theatro/browser/index.html
-      - run: ls -la dist/chat-theatro/browser
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
